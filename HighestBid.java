@@ -10,12 +10,14 @@ public class HighestBid {
         System.out.println("Enter your Third Bid:");
         int C = orgs.nextInt();
         orgs.close();
+        int Z = 0;
         if (A > B && A > C) {
-            System.out.println("Highest Bid is : " + A);
+            Z = A;
         } else if (B > C && B > A) {
-            System.out.println("Highest Bid is: " + B);
+            Z = B;
         } else if (C > A && C > B) {
-            System.out.println("Highest Bid is: " + C);
+            Z = C;
         }
+        System.out.println("Highest Bid is: " + Z);
     }
 }
