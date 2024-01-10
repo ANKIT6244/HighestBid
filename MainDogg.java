@@ -12,6 +12,13 @@ public class MainDogg {
         cat.pattern = "tabby";
         cat.Meow();
         cat.run();
+
+        Puppy pup = new Puppy();
+        pup.size = 25;
+        pup.age = 2;
+        pup.sleep();
+        pup.run();
+        pup.bark();
     }
 }
 
@@ -36,5 +43,14 @@ class Cat extends Animal {
 
     public void Meow() {
         System.out.println("Meow! Meow!");
+    }
+}
+
+class Puppy extends Dogg {
+    int size;
+    int age;
+
+    public void sleep() {
+        System.out.println("Puppy is Sleeping.");
     }
 }
